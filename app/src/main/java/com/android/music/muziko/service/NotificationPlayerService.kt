@@ -109,11 +109,13 @@ class NotificationPlayerService : Service() {
             )
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setSmallIcon(R.drawable.ic_song)
+            .setContentIntent(pendingIntent)
             .setLargeIcon(Coordinator.currentPlayingSong?.image)
             .addAction(R.drawable.ic_notification_previous, "previous", prevPendingIntent)
             .addAction(R.drawable.ic_notification_play, "play", playPendingIntent)
             .addAction(R.drawable.ic_notification_pause, "pause", pausePendingIntent)
             .addAction(R.drawable.ic_notification_next, "next", nextPendingIntent)
+
             .build()
 //            .setContentIntent(pendingIntent)
 

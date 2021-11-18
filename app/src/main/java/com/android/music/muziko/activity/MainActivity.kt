@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.NavHostFragment
@@ -31,7 +32,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    var prefs: SharedPreferences? = null
 
     fun updateVisibility(song : Song) {
         if(Coordinator.isPlaying()){
@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.e("On Create", "main")
         activity = this
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
@@ -121,6 +122,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        Log.e("on resume", "main")
         Coordinator.currentPlayingSong?.let { updateVisibility(it) }
     }
 
