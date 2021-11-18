@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable-v24/circle_bg.xml" value="0.2703125" />
+        <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable/background_library.xml" value="0.2703125" />
+        <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable/ic_add_playlists_library.xml" value="0.2703125" />
+        <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable/ic_arrow_left.xml" value="0.2703125" />
         <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable/ic_library.xml" value="0.20925925925925926" />
         <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable/ic_notification_pause.xml" value="0.20925925925925926" />
         <entry key="..\:/Java/Android Projects/Muziko/app/src/main/res/drawable/ic_notification_play.xml" value="0.20925925925925926" />
